@@ -1,0 +1,50 @@
+body{
+    background: url(https://source.unsplash.com/kkJuQhp9Kw0);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.circle{
+    width: 200px;
+    background: transparent;
+    height:200px;
+    margin: 0 auto;
+    margin-top: 600px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    font-size: 40px;
+    border-radius: 50%;
+    transition: all 1s;
+    border: 2px solid white;
+
+}
+
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.message{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+    color: gray;
+    animation: drop 2s ease-in forwards;
+}
+
+@keyframes drop{
+    0% {transform: translateY(-200px)}
+    50% { transform: translateY(100px)}
+    100% { transform: translateY(-50px)}
+}
