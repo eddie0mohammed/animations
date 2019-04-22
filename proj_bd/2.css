@@ -1,11 +1,113 @@
 *{
     margin: 0;
     padding: 0;
+    color: white;
 }
 body{
     background: black;
+  
 }
 
 video{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    
 }
+
+.content-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #255470;
+    opacity: 0;
+    z-index: 1;
+    animation: bkoverlay 2s ease-in forwards;
+    animation-delay: 15s;
+}
+
+.birthday{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 100px;
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 17s;
+    z-index: 2;
+}
+
+@keyframes bdMessage{
+    0% {opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes bkoverlay{
+    0% {opacity: 0}
+    100% {opacity: 0.85}
+}
+h1{
+    text-align: center;
+    opacity: 0;
+    font-size: 40px;
+    margin-top: 20px;
+   
+}
+.message1{
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 21s;
+}
+.message2{
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 23s;
+}
+.message3{
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 25s;
+}
+
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 29s; 
+    
+}
+.img2{
+    width: 300px;
+    height: 300px;
+    margin-top: 320px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 50s;
+}
+.img3{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 40s;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+}
+
+.messagep1{
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 33s;
+}
+.messagep2{
+    opacity: 0;
+    animation: bdMessage 1s ease-in forwards;
+    animation-delay: 43s;
+}   
