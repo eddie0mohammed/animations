@@ -3,6 +3,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -11,7 +13,7 @@ body{
     background: transparent;
     height:200px;
     margin: 0 auto;
-    margin-top: 600px;
+    margin-top: 400px;
     text-align:center;
     display: flex;
     flex-direction: column;

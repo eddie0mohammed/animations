@@ -20,7 +20,7 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    background: #255470;
+    background: #F4C2C2;
     opacity: 0;
     z-index: 1;
     animation: bkoverlay 2s ease-in forwards;
@@ -71,8 +71,8 @@ h1{
     justify-content: space-between;
 }
 .img1{
-    width:300px;
-    height: 300px;
+    width:400px;
+    height: 600px;
     border-radius: 10px;
     opacity: 0;
     animation: bdMessage 1s ease-in forwards;
@@ -80,8 +80,8 @@ h1{
     
 }
 .img2{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     margin-top: 320px;
     border-radius: 10px;
     opacity: 0;
@@ -89,8 +89,8 @@ h1{
     animation-delay: 50s;
 }
 .img3{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 600px;
     border-radius: 10px;
     opacity: 0;
     animation: bdMessage 1s ease-in forwards;
