@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
-    background:pink;
+    background:	#86608E;
 }
 body{
     background: black;
@@ -21,7 +21,7 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    background: #F4C2C2;
+    background: 	#86608E;
     opacity: 0;
     z-index: 1;
     animation: bkoverlay 2s ease-in forwards;
@@ -81,9 +81,9 @@ h1{
     
 }
 .img2{
-    width: 400px;
-    height: 500px;
-    margin-top: 320px;
+    width: 500px;
+    height: 700px;
+    margin-top: 220px;
     border-radius: 10px;
     opacity: 0;
     animation: bdMessage 1s ease-in forwards;
@@ -103,11 +103,14 @@ h1{
 }
 
 .messagep1{
+    width:400px;
     opacity: 0;
     animation: bdMessage 1s ease-in forwards;
     animation-delay: 33s;
 }
 .messagep2{
+    width:400px;
+
     opacity: 0;
     animation: bdMessage 1s ease-in forwards;
     animation-delay: 43s;
