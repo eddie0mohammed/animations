@@ -13,7 +13,7 @@ body{
     background: transparent;
     height:200px;
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 100px;
     text-align:center;
     display: flex;
     flex-direction: column;
