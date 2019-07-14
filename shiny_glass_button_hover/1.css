@@ -6,7 +6,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-30deg, #1ec4e9 0%, #673ab7 50%, #262626 50%, #607d8b 100%);
+    /* background: linear-gradient(-30deg, #1ec4e9 0%, #673ab7 50%, #262626 50%, #607d8b 100%); */
+    background: black;
 }
 
 a{
@@ -31,6 +32,7 @@ a:before{
     width: 50%;
     height: 100%;
     background: rgba(255, 255,255, .1);
+
 }
 
 a:after{
@@ -43,6 +45,7 @@ a:after{
     background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
     transition: 0.5s;
     transition-delay: 0.2s;
+
 }
 
 a:hover:after{
