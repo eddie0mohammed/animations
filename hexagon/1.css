@@ -1,0 +1,29 @@
+.hexagon{
+    width: 600px;
+    height: 400px;
+    background: red;
+    transform: rotate(120deg);
+    margin:200px auto;
+    overflow:hidden;
+    visibility: hidden;
+}
+
+.inside{
+    background: green;
+    height:100%;
+    width: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+
+}
+
+.image{
+    width: 100%;
+    height:100%;
+    background: url('https://source.unsplash.com/random');
+    background-position: center;
+    background-size: 100% 100%;
+    transform: rotate(-60deg);
+    visibility: visible;
+
+}
