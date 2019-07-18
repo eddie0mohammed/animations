@@ -39,12 +39,12 @@ a:before{
     transform: scaleX(1);
 }
 
-a:nth-child(1):hover:before{
+a:hover:before{
     transform-origin: right;
     transition: transform 0.5s ease;
     transform: scaleX(0);
 }
-a:nth-child(2):before{
+/* a:nth-child(2):before{
     content: '';
     position: absolute;
     top: 0;
@@ -79,4 +79,4 @@ a:nth-child(3):hover:before{
     transform-origin: left;
     transition: transform 0.5s ease;
     transform: scaleX(0);
-}
+} */
