@@ -1,9 +1,9 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
   box-sizing: border-box;
-}
+} */
 
 .services-section{
   background: url(bg.jpg);
@@ -34,6 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: pink;
 }
 
 .service-box{
@@ -42,12 +43,14 @@
   text-align: center;
   color: #ddd;
   cursor: pointer;
+  background: black;
+  border: 1px solid white;
 }
 
 .service-icon{
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border: 3px solid #82ccdd;
   color: #82ccdd;
   transform: rotate(45deg);
@@ -56,7 +59,7 @@
   transition: 0.3s linear;
 }
 .service-icon i{
-  line-height: 70px;
+  line-height: 80px;
   transform: rotate(-45deg);
   font-size: 26px;
 }
