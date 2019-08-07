@@ -9,6 +9,12 @@ body{
     overflow-x: hidden;
 }
 
+.container{
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+
 input[type=checkbox]{
     position: fixed;
     right: 20px;
@@ -100,4 +106,35 @@ section{
 
 input[type=checkbox]:checked ~ section{
     left: 0;
+}
+
+@media (max-width: 991px){
+    section{
+        padding: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    ul{
+        width: 100%;
+        left: 0;
+    }
+    input[type="checkbox"]:checked ~ ul{
+        left: -100%;
+    }
+
+    input[type="checkbox"]{
+        z-index:1000;
+        outline: none;
+        top: 0;
+        right: 0;
+    }
+    input[type="checkbox"] ~ .icon{
+        top: 0;
+        right: 0;
+        background: #f00;
+        transition: 0.5s;
+
+    }
+
 }
