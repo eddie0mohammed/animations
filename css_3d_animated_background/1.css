@@ -30,7 +30,7 @@ body{
     height: 400px;
     transform-style: preserve-3d;
     animation: rotate 20s linear infinite;
-    zoom: 4;
+    zoom: 5;
 }
 
 @keyframes rotate {
@@ -54,12 +54,12 @@ body{
 
 /* .background .rotate .sphere:nth-child(2){
     transform: rotate(90deg);
-} */
+}
 
-/* .background .rotate .sphere:nth-child(3){
+.background .rotate .sphere:nth-child(3){
     transform: rotate(45deg);
-} */
-/* .background .rotate .sphere:nth-child(4){
+}
+.background .rotate .sphere:nth-child(4){
     transform: rotate(-45deg);
 } */
 
