@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.box{
+    width: 580px;
+    height: 400px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 8s;
+}
+
+.box1{
+    background:  url('beachResort.png');
+    background-size: 100% 200%;
+}
+.box2{
+    background:  url('techStore.png');
+    background-size: 100% 400%;
+    
+}
+
+.box:hover{
+    background-position: bottom;
+}
