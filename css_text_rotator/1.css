@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+h1{
+    /* position: relative; */
+    color: #fff;
+    font-size: 12em;
+    text-transform: uppercase;
+}
+
+h1:before{
+    content: '';
+    /* color: white; */
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        content: 'wow';
+    }
+    20%{
+        content: 'cool';
+
+    }
+    40%{
+        content: 'nice';
+
+    }
+    60%{
+        content: 'awesome';
+
+    }
+    80%{
+        content: 'great';
+
+    }
+    100%{
+        content: 'amazing';
+
+    }
+}
