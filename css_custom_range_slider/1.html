@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Custom CSS Range Slider</title>
+</head>
+<body>
+
+    <div>
+        <span id="rangeValue">0</span>
+        <input class="range" type="range" name="" value="0" min="0" max="1000" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" >
+    </div>
+
+    <script>
+        function rangeSlide(value){
+            document.getElementById('rangeValue').textContent = value;
+        }
+    </script>
+    
+</body>
+</html>
