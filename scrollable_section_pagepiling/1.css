@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagepiling .section{
+    text-align:center;
+}
+
+#pagepiling .section h2{
+    color: white;
+    font-size: 10em;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5)
+}
+
+#pagepiling .section.sec1{
+    background: url(./images/norway.jpg);
+    background-size:cover;
+}
+#pagepiling .section.sec2{
+    background: url(./images/switzerland.jpg);
+    background-size:cover;
+}
+#pagepiling .section.sec3{
+    background: url(./images/austria.jpg);
+    background-size:cover;
+}
+#pagepiling .section.sec4{
+    background: url(./images/new\ zealand.jpg);
+    background-size:cover;
+}
+
+#pp-nav li .active span, .pp-slidesNav .active span{
+    background: #fff;
+}
