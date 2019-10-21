@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="1.css">
+    <title>Menu_animated_toggle_effect</title>
+</head>
+<body>
+
+        <div class="page">
+                <span class="menu_toggle">
+                  <i class="menu_open fa fa-bars fa-lg"></i>
+                  <i class="menu_close fa fa-times fa-lg"></i>
+                </span>
+                <ul class="menu_items">
+                  <li><a href="#"><i class="icon fa fa-home fa-2x"></i> Moar</a></li>
+                  <li><a href="#"><i class="icon fa fa-phone fa-2x"></i> Coffee</a></li>
+                  <li><a href="#"><i class="icon fa fa-heart fa-2x"></i> Please</a></li>
+                </ul>
+                <main class="content">
+                  <div class="content_inner">
+                    <h1>Amazing Design Exclusively</h1>
+                    <br><br><br> 
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-behance"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <br><br>
+                    <p>Do <strong>not</strong> push that big, red button in the corner. People will die. You have been warned. Do&hellip; not do it.</p>
+                      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
+                  </div>
+                </main>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+              <script>
+                  // elements
+              var $page = $('.page');
+              
+              $('.menu_toggle').on('click', function(){
+                $page.toggleClass('shazam');
+              });
+              $('.content').on('click', function(){
+                $page.removeClass('shazam');
+              });
+                  
+              </script>
+</body>
+</html>
