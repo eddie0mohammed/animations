@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="1.css">
+    <title>Diagonal Shaped Navbar</title>
+</head>
+<body>
+        <nav class="menu-activea">
+            <h1>Navbar</h1>
+            <ul>
+                <li>HOME</li>
+                <li>GALLERY</li>
+                <li>TEAM</li>
+                <li>SERVICES</li>
+                <li>ABOUT</li>
+                <li>WORK</li>
+                <li>FAQ</li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <br><br><br>
+                <h1>&larr; DIAGONAL SHAPED NAV</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio molestias rem sed reiciendis praesentium odit iste doloribus, consequatur ad. Aliquid, deserunt officiis eius natus sed dolores sequi quisquam, similique eos iure suscipit magni necessitatibus ipsum recusandae impedit possimus cumque ducimus voluptatum est tenetur praesentium incidunt id! Quas nostrum natus fuga, commodi facilis harum quasi odio repellat voluptas, at tempora sapiente ipsa ea totam porro voluptates atque, adipisci laudantium. Voluptate, facilis excepturi asperiores voluptatibus impedit sint aut molestias debitis! Eveniet, ab harum ea officia cupiditate nobis quasi tempora, dolor non laborum mollitia quos blanditiis possimus eligendi sit recusandae! Illo, optio.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio molestias rem sed reiciendis praesentium odit iste doloribus, consequatur ad. Aliquid, deserunt officiis eius natus sed dolores sequi quisquam, similique eos iure suscipit magni necessitatibus ipsum recusandae impedit possimus cumque ducimus voluptatum est tenetur praesentium incidunt id! Quas nostrum natus fuga, commodi facilis harum quasi odio repellat voluptas, at tempora sapiente ipsa ea totam porro voluptates atque, adipisci laudantium. Voluptate, facilis excepturi asperiores voluptatibus impedit sint aut molestias debitis! Eveniet, ab harum ea officia cupiditate nobis quasi tempora, dolor non laborum mollitia quos blanditiis possimus eligendi sit recusandae! Illo, optio.</p>
+
+            </section>
+        </main>
+
+
+        <script>
+             (function() {
+
+            var nav = $('nav'),
+            menu = $('nav h1'),
+            main = $('main'),
+            // win = $('window'),
+                open = false,
+                hover = false;
+
+            menu.on('click', function() {
+                open = !open ? true : false;
+            nav.toggleClass('menu-active');
+            main.toggleClass('menu-active');
+            nav.removeClass('menu-hover');
+            main.removeClass('menu-hover');
+            console.log(open);
+            });
+            menu.hover( 
+            function() {
+                if (!open) {
+                    nav.addClass('menu-hover');
+                    main.addClass('menu-hover');
+                }
+            }
+            , function() {
+                nav.removeClass('menu-hover');
+                main.removeClass('menu-hover');
+            }
+            );
+
+            main.on('click', function(){
+                nav.removeClass('menu-active');
+            main.removeClass('menu-active');
+            })
+
+            })();
+        </script>
+    
+</body>
+</html>
