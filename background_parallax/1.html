@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Background Fade Parallax</title>
+</head>
+<body>
+    <div class="header">
+        <div id="bg" ></div>
+    </div>
+    <section>
+        <h2>Background Fade Parallax</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nostrum voluptatum tenetur odio autem accusantium vero eius ad dolorum veritatis adipisci vitae necessitatibus mollitia expedita explicabo obcaecati aspernatur libero officia saepe at, sapiente, consectetur repellendus recusandae maxime. Deserunt perferendis sequi, explicabo provident dolore id placeat. Totam harum illum pariatur natus veniam laborum dicta, aperiam tempore fugit mollitia! Pariatur obcaecati consectetur perspiciatis veritatis tempore, quae ipsa voluptatem. Saepe aut eius nam voluptatum pariatur minus exercitationem architecto quam perferendis facilis, voluptatibus inventore, quas voluptate excepturi dolore in fuga vero placeat omnis quis esse. Eaque corrupti laboriosam ipsa? Natus, officiis et. Cupiditate, maiores.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, id est! Natus, ex eaque facere corrupti nobis, eum temporibus suscipit optio aspernatur neque, et placeat eveniet expedita sapiente! Cupiditate vitae perferendis, pariatur unde amet debitis hic facere reprehenderit. Rerum quae incidunt quos cumque quisquam eius blanditiis nobis soluta. Nisi, laboriosam!</p>
+    </section>
+
+    <script>
+        const headerBg = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            headerBg.style.opacity = 1 - +window.pageYOffset/550+"";
+            headerBg.style.top = +window.pageYOffset+'px';
+            headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
+        })
+    </script>
+</body>
+</html>
