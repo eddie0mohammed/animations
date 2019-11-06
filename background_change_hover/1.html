@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Change Background Hover</title>
+</head>
+<body>
+    
+    <ul>
+        <li onmouseover="javascript:changeColorBg('ff6b6b')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">Home</a></li>
+        <li onmouseover="javascript:changeColorBg('asd1b4')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">About</a></li>
+        <li onmouseover="javascript:changeColorBg('123njb')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">Services</a></li>
+        <li onmouseover="javascript:changeColorBg('asdl13')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">Portfolio</a></li>
+        <li onmouseover="javascript:changeColorBg('eaff21')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">Our Team</a></li>
+        <li onmouseover="javascript:changeColorBg('f12asd')" onmouseout="javascript:changeColorBg('transparent')"><a href="#">Contact</a></li>
+    </ul>
+    
+    <script>
+        function changeColorBg(color){
+            document.bgColor = color;
+        }
+    </script>
+</body>
+</html>
