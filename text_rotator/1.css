@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #151515;
+}
+
+h2{
+    position: relative;
+    font-size: 4em;
+    color: #444;
+    width: 80%;
+}
+
+h2 span{
+    color: #0f0;
+    display: none;
+}
