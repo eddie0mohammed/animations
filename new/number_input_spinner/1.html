@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Number Spinner</title>
+</head>
+<body>
+
+    <div class="container">
+        <span class="next" onClick="nextNum()"></span>
+        <span class="previous" onClick="prevNum()"></span>
+        <div id="box">
+            <!-- <span>0</span> -->
+        </div>
+    </div>
+
+
+
+
+    <script>
+        
+        var numbers = document.getElementById('box');
+        for (let i = 0; i < 100; i++){
+            var span = document.createElement('span');
+            span.textContent = i;
+            numbers.appendChild(span);
+        }
+
+        var num = numbers.getElementsByTagName('span');
+        var index = 0;
+
+        function nextNum(){
+            num[index].style.display = 'none';
+            index = (index + 1) % num.length;
+            num[index].style.display = 'initial';
+        }
+
+        function prevNum(){
+            num[index].style.display = 'none';
+            index = (index - 1 + num.length) % num.length;
+            num[index].style.display = 'initial';
+        }
+
+    </script>
+    
+</body>
+</html>
