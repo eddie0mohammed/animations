@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    padding: 0 100px;
+    min-height: 100vh;
+}
+
+.container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: #333;
+    z-index: -2;
+}
+
+.container:after{
+    content: 'Healthy';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18vw;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.04;
+    z-index: -2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header .logo{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.header .logo span{
+    color: #78ff00;
+}
+
+.header ul{
+    position: relative;
+    display: flex;
+}
+
+.header ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.header ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #333;
+    text-decoration:none;
+}
+
+
+.header ul li:nth-child(3) a,
+.header ul li:nth-child(4) a{
+    color: white;
+}
+
