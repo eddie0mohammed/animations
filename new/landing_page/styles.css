@@ -175,3 +175,53 @@ header ul li a:hover:before{
     object-fit: cover;
     transition: 0.5s;
 }
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.icons .sci,
+.icons .controls{
+    position: relative;
+    display: flex;
+}
+
+.icons .sci li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.icons .sci li a,
+.icons .controls li a{
+    color: black;
+    font-size: 20px;
+}
+
+.icons .sci li a{
+    display: inline-block;
+    max-height: 24px;
+    transition: 0.5s ease-in-out;
+}
+
+.icons .sci li:hover a{
+    transform: translateY(-10px);
+}
+
+.icons .controls li{
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+.icons .controls li:hover{
+    opacity: 0.5;
+}
