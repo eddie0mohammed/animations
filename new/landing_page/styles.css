@@ -114,6 +114,14 @@ header ul li a:hover:before{
     margin-right: 50px;
 }
 
+.content .bannerText div{
+    display: none;
+}
+
+.content .bannerText div.active{
+    display: initial;
+}
+
 .content .bannerText h2{
     font-size: 54px;
     text-transform: uppercase;
@@ -166,6 +174,7 @@ header ul li a:hover:before{
      background: #000;
  }
 
+
 .content .bannerImg img{
     position: absolute;
     top: 0;
@@ -174,6 +183,11 @@ header ul li a:hover:before{
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
+    opacity: 0;
+}
+
+.content .bannerImg img.active{
+    opacity: 1;
 }
 
 .icons{

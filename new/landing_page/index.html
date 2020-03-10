@@ -24,15 +24,27 @@
         </header>
 
         <div class="content">
-            <div class="bannerText">
-                <div>
+            <div class="bannerText" id="slideshowText">
+                <div class="active">
                     <h2>Eat Healthy <br> Stay Healthy</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quod dolorem, vel necessitatibus recusandae consectetur esse, optio aliquid quis dolorum facere, obcaecati magni consequatur mollitia nihil incidunt repudiandae eius!</p>
                     <a href="#">Read More</a>
                 </div>
+                <div>
+                    <h2>Eat Plenty <br> of Veggies</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quod dolorem, vel necessitatibus recusandae consectetur esse, optio aliquid quis dolorum facere, obcaecati magni consequatur mollitia nihil incidunt repudiandae eius!</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Good Food <br> Good Energy</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit quod dolorem, vel necessitatibus recusandae consectetur esse, optio aliquid quis dolorum facere, obcaecati magni consequatur mollitia nihil incidunt repudiandae eius!</p>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="bannerImg">
-                <img src="https://source.unsplash.com/random" alt="random">
+            <div class="bannerImg" id="slideshow">
+                <img class="active" src="https://source.unsplash.com/random/600x600" alt="random">
+                <img src="https://source.unsplash.com/random/601x600" alt="random">
+                <img src="https://source.unsplash.com/random/602x600" alt="random">
             </div>
         </div>
 
@@ -45,12 +57,14 @@
             </ul>
 
             <ul class="controls">
-                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                <li onclick="prevSlide()"> <i class="fa fa-angle-left"></i></li>
+                <li onclick="nextSlide()"><i class="fa fa-angle-right"></i></li>
             </ul>
         </div>
     </div>
 
 
+
+    <script src="app.js"></script>
 </body>
 </html>
