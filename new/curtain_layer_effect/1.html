@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Curtain Layer Effect</title>
+</head>
+<body>
+
+    <div id="curtain">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+      <div class="toggle"></div>  
+    </div>
+
+
+
+    <script>
+        var curtain = document.getElementById('curtain');
+        var toggle = document.querySelector('.toggle');
+        toggle.addEventListener('click' ,  () => {
+            curtain.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
