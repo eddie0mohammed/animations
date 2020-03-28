@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Transform Effects</title>
+</head>
+<body>
+
+    <section>
+        <span class="skewed"></span>
+    </section>
+    
+
+    <script>
+        var skewed = document.querySelector('.skewed');
+        window.addEventListener('scroll', function(){
+            var value = -10 + window.scrollY /60;
+            skewed.style.transform = "skewY("+ value + "deg )";
+        });
+    </script>
+</body>
+</html>
