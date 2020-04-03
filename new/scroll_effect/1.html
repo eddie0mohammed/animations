@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Scroll Effect</title>
+</head>
+<body>
+
+    <h2 class="title">Scroll</h2>
+
+    <section>
+        
+    </section>
+
+    <div class="container">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus illo architecto magnam quisquam sit fuga provident aperiam harum doloribus nulla quas alias, similique quibusdam numquam delectus a non aliquam molestias illum eveniet! Necessitatibus beatae quidem alias modi distinctio aperiam quaerat magnam iste, aut, eius vitae nulla, obcaecati praesentium quibusdam tempora molestias? Rem amet magni nulla quo ad laboriosam tempora sunt voluptatum expedita aspernatur fugit est recusandae neque, delectus architecto error aut enim animi vero officiis quia atque earum nesciunt. Corrupti voluptatibus eaque possimus a libero! Accusamus non, laudantium unde quos, excepturi illo inventore quam necessitatibus iste vero praesentium eum.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus illo architecto magnam quisquam sit fuga provident aperiam harum doloribus nulla quas alias, similique quibusdam numquam delectus a non aliquam molestias illum eveniet! Necessitatibus beatae quidem alias modi distinctio aperiam quaerat magnam iste, aut, eius vitae nulla, obcaecati praesentium quibusdam tempora molestias? Rem amet magni nulla quo ad laboriosam tempora sunt voluptatum expedita aspernatur fugit est recusandae neque, delectus architecto error aut enim animi vero officiis quia atque earum nesciunt. Corrupti voluptatibus eaque possimus a libero! Accusamus non, laudantium unde quos, excepturi illo inventore quam necessitatibus iste vero praesentium eum.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus illo architecto magnam quisquam sit fuga provident aperiam harum doloribus nulla quas alias, similique quibusdam numquam delectus a non aliquam molestias illum eveniet! Necessitatibus beatae quidem alias modi distinctio aperiam quaerat magnam iste, aut, eius vitae nulla, obcaecati praesentium quibusdam tempora molestias? Rem amet magni nulla quo ad laboriosam tempora sunt voluptatum expedita aspernatur fugit est recusandae neque, delectus architecto error aut enim animi vero officiis quia atque earum nesciunt. Corrupti voluptatibus eaque possimus a libero! Accusamus non, laudantium unde quos, excepturi illo inventore quam necessitatibus iste vero praesentium eum.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus illo architecto magnam quisquam sit fuga provident aperiam harum doloribus nulla quas alias, similique quibusdam numquam delectus a non aliquam molestias illum eveniet! Necessitatibus beatae quidem alias modi distinctio aperiam quaerat magnam iste, aut, eius vitae nulla, obcaecati praesentium quibusdam tempora molestias? Rem amet magni nulla quo ad laboriosam tempora sunt voluptatum expedita aspernatur fugit est recusandae neque, delectus architecto error aut enim animi vero officiis quia atque earum nesciunt. Corrupti voluptatibus eaque possimus a libero! Accusamus non, laudantium unde quos, excepturi illo inventore quam necessitatibus iste vero praesentium eum.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus illo architecto magnam quisquam sit fuga provident aperiam harum doloribus nulla quas alias, similique quibusdam numquam delectus a non aliquam molestias illum eveniet! Necessitatibus beatae quidem alias modi distinctio aperiam quaerat magnam iste, aut, eius vitae nulla, obcaecati praesentium quibusdam tempora molestias? Rem amet magni nulla quo ad laboriosam tempora sunt voluptatum expedita aspernatur fugit est recusandae neque, delectus architecto error aut enim animi vero officiis quia atque earum nesciunt. Corrupti voluptatibus eaque possimus a libero! Accusamus non, laudantium unde quos, excepturi illo inventore quam necessitatibus iste vero praesentium eum.</p>
+        <br><br>
+
+    </div>
+    
+    <script>
+        var section = document.querySelector('section');
+        window.addEventListener('scroll', () => {
+            var value = window.scrollY === 0 ? 100 : window.scrollY + 100;
+            section.style.clipPath = 'circle(' + value +'px at center)'
+        })
+    </script>
+</body>
+</html>
