@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Image Trail</title>
+</head>
+<body>
+
+    <div class="imgBx">
+        <img src="https://source.unsplash.com/random" alt="">
+    </div>
+
+    <div class="imgBx">
+        <img src="https://source.unsplash.com/random/600x600" alt="">
+    </div>
+    <div class="imgBx">
+        <img src="https://source.unsplash.com/random/600x601" alt="">
+    </div>
+
+    <div class="imgBx">
+        <img src="https://source.unsplash.com/random/600x602" alt="">
+    </div>
+    <div class="imgBx">
+        <img src="https://source.unsplash.com/random/600x603" alt="">
+    </div>
+            
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js></script>
+
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            gsap.to('.imgBx', {
+                x: e.clientX,
+                y: e.clientY,
+                stagger: 0.1
+            })
+
+        })
+    </script>
+            
+
+    
+</body>
+</html>
