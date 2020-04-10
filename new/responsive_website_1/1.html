@@ -12,14 +12,14 @@
     <header id="header">
         <a href="#" class="logo">LOGO</a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="toggle"></div>
+        <div class="toggle" onclick="toggle()"></div>
     </header>
 
     <section id="home">
@@ -30,6 +30,58 @@
         </div>
         <img src="https://source.unsplash.com/random" alt="">
     </section>
+
+    <section id="about">
+        <div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates autem nobis cum esse ea, assumenda iure veniam accusamus facere, necessitatibus mollitia neque molestiae velit dignissimos atque commodi maxime quis nemo facilis, voluptatem inventore rerum deleniti adipisci? Dolor aliquam esse perferendis. Dolores delectus quam facere quaerat beatae numquam accusamus molestiae laborum incidunt minus cupiditate commodi omnis quis sed, atque deleniti in. Incidunt, aliquam dicta? Numquam, nihil? Odio, minus rerum facere officia et minima, ipsa modi pariatur dolorem quas temporibus doloribus cum alias soluta voluptatem molestiae recusandae sapiente vel eum voluptate nulla omnis! Optio voluptatibus voluptatem, qui dignissimos dolore illum sed.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://source.unsplash.com/random" alt="">
+    </section>
+
+    <section id="service">
+        <div>
+            <h2>Service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates autem nobis cum esse ea, assumenda iure veniam accusamus facere, necessitatibus mollitia neque molestiae velit dignissimos atque commodi maxime quis nemo facilis, voluptatem inventore rerum deleniti adipisci? Dolor aliquam esse perferendis. Dolores delectus quam facere quaerat beatae numquam accusamus molestiae laborum incidunt minus cupiditate commodi omnis quis sed, atque deleniti in. Incidunt, aliquam dicta? Numquam, nihil? Odio, minus rerum facere officia et minima, ipsa modi pariatur dolorem quas temporibus doloribus cum alias soluta voluptatem molestiae recusandae sapiente vel eum voluptate nulla omnis! Optio voluptatibus voluptatem, qui dignissimos dolore illum sed.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://source.unsplash.com/random" alt="">
+    </section>
     
+    <section id="portfolio">
+        <div>
+            <h2>Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates autem nobis cum esse ea, assumenda iure veniam accusamus facere, necessitatibus mollitia neque molestiae velit dignissimos atque commodi maxime quis nemo facilis, voluptatem inventore rerum deleniti adipisci? Dolor aliquam esse perferendis. Dolores delectus quam facere quaerat beatae numquam accusamus molestiae laborum incidunt minus cupiditate commodi omnis quis sed, atque deleniti in. Incidunt, aliquam dicta? Numquam, nihil? Odio, minus rerum facere officia et minima, ipsa modi pariatur dolorem quas temporibus doloribus cum alias soluta voluptatem molestiae recusandae sapiente vel eum voluptate nulla omnis! Optio voluptatibus voluptatem, qui dignissimos dolore illum sed.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://source.unsplash.com/random" alt="">
+    </section>
+
+    <section id="team">
+        <div>
+            <h2>Team</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates autem nobis cum esse ea, assumenda iure veniam accusamus facere, necessitatibus mollitia neque molestiae velit dignissimos atque commodi maxime quis nemo facilis, voluptatem inventore rerum deleniti adipisci? Dolor aliquam esse perferendis. Dolores delectus quam facere quaerat beatae numquam accusamus molestiae laborum incidunt minus cupiditate commodi omnis quis sed, atque deleniti in. Incidunt, aliquam dicta? Numquam, nihil? Odio, minus rerum facere officia et minima, ipsa modi pariatur dolorem quas temporibus doloribus cum alias soluta voluptatem molestiae recusandae sapiente vel eum voluptate nulla omnis! Optio voluptatibus voluptatem, qui dignissimos dolore illum sed.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://source.unsplash.com/random" alt="">
+    </section>
+
+    <section id="contact">
+        <div>
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates autem nobis cum esse ea, assumenda iure veniam accusamus facere, necessitatibus mollitia neque molestiae velit dignissimos atque commodi maxime quis nemo facilis, voluptatem inventore rerum deleniti adipisci? Dolor aliquam esse perferendis. Dolores delectus quam facere quaerat beatae numquam accusamus molestiae laborum incidunt minus cupiditate commodi omnis quis sed, atque deleniti in. Incidunt, aliquam dicta? Numquam, nihil? Odio, minus rerum facere officia et minima, ipsa modi pariatur dolorem quas temporibus doloribus cum alias soluta voluptatem molestiae recusandae sapiente vel eum voluptate nulla omnis! Optio voluptatibus voluptatem, qui dignissimos dolore illum sed.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://source.unsplash.com/random" alt="">
+    </section>
+
+
+    <script>
+        function toggle(){
+            var header = document.getElementById('header');
+            header.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

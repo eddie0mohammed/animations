@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -23,6 +24,8 @@ header .logo{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 700;
+    position: relative;
+    z-index: 100;
 }
 
 header ul{
@@ -89,4 +92,91 @@ section a{
     background: #111;
     color: #fff;
     margin-top: 20px; 
+}
+
+section:nth-child(odd){
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: #fff;
+}
+
+
+
+@media (max-width: 992px){
+
+    section{
+        
+    }
+
+    header ul{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #111;
+        flex-direction: column;
+        transform: translateY(-100%);
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    header.active ul{
+        top: 80px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    header ul li {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle:before{
+        content:'';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+    .toggle:after{
+        content:'';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        /* box-shadow: 0 10px 0 #fff;/ */
+        transition: 0.5s;
+    }
+
+    header.active .toggle:before{
+        top: 14px;
+        transform: rotate(135deg);
+        box-shadow: none;
+    }
+    header.active .toggle:after{
+        top: 14px;
+        transform: rotate(225deg);
+        
+    }
+
 }
