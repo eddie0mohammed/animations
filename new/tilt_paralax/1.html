@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Tilt Parallax</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="imgBx">
+                <img src="https://source.unsplash.com/random" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Tilt Box Hover Effects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo tempore laborum deleniti ipsum eaque beatae deserunt in et eum unde, voluptatem quisquam reiciendis mollitia, tempora tenetur magnam saepe rerum facilis ipsam autem. Labore nihil amet dignissimos eveniet! Dicta dignissimos id unde rem officia nobis quo in quia. Cumque, culpa.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBx">
+                <img src="https://source.unsplash.com/random" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Tilt Box Hover Effects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo tempore laborum deleniti ipsum eaque beatae deserunt in et eum unde, voluptatem quisquam reiciendis mollitia, tempora tenetur magnam saepe rerum facilis ipsam autem. Labore nihil amet dignissimos eveniet! Dicta dignissimos id unde rem officia nobis quo in quia. Cumque, culpa.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        }); 
+    
+    </script>
+
+    
+</body>
+</html>
