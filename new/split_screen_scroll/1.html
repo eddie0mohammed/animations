@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <title>Split Screen Scroll</title>
+</head>
+<body>
+
+
+    <section>
+        <div class="side" id="side1"></div>
+        <div class="side" id="side2"></div>
+    </section>
+
+    <div class="contentBx">
+        <h2>Split Banner On Page Scroll</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptatum, animi quam hic vitae impedit, veniam eos debitis corrupti numquam iste corporis. Ipsa enim nostrum unde? Qui quae natus similique odio accusamus rerum. Ratione iusto, nihil ducimus fugiat voluptates delectus aperiam, blanditiis quae molestiae reprehenderit modi repellendus animi quis nostrum.</p>
+    </div>
+
+
+    <script>
+        var side1 = document.getElementById('side1');
+        var side2 = document.getElementById('side2');
+        window.addEventListener('scroll', () => {
+            side1.style.left = -window.pageYOffset + 'px';
+            side2.style.left = window.pageYOffset + 'px';
+        })
+
+
+        
+    </script>
+    
+</body>
+</html>
